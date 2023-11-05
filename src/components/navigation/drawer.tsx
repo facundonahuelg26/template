@@ -12,7 +12,7 @@ import { Button } from '@nextui-org/button'
 
 import { useToggle } from '@/features/ui/toggle'
 import LinkList from '@/components/ui/link-list'
-import { PROPS_NAVIGATION } from '@/features/ui/navigation'
+import { PROPS_NAVIGATION } from '@/features/navigation'
 import { iconClasses, mainIcon } from '@/components/icons/style'
 import HappyFace from '@/components/icons/happy-face'
 import Event from '@/components/icons/event'

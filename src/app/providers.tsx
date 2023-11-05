@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import { NextUIProvider } from '@nextui-org/system'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { ToggleProvider } from '@/features/ui/toggle'
-// import { ProtectedRoutes } from '@/features/ui/navigation/protected-routes'
+import { SessionProvider } from 'next-auth/react'
 type Props = {
   children: ReactNode
 }
@@ -13,9 +13,9 @@ export default function Providers({ children }: Props) {
     <>
       <NextUIProvider>
         <NextThemesProvider attribute='class' defaultTheme='dark'>
-          {/* <ProtectedRoutes> */}
-          <ToggleProvider>{children}</ToggleProvider>
-          {/* </ProtectedRoutes> */}
+          <SessionProvider>
+            <ToggleProvider>{children}</ToggleProvider>
+          </SessionProvider>
         </NextThemesProvider>
       </NextUIProvider>
     </>

@@ -1,6 +1,6 @@
 import Acme from '@/components/icons/acme'
 import Home from '@/components/icons/home'
-import { ROUTES } from '@/features/ui/navigation/navigation-routes'
+import { ROUTES } from '@/features/navigation/navigation-routes'
 import { ReactNode } from 'react'
 import { iconClasses } from '@/components/icons/style'
 import Timeline from '@/components/icons/timeline'
