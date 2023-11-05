@@ -2,7 +2,7 @@ import { Listbox, ListboxItem } from '@nextui-org/listbox'
 import { Link } from '@nextui-org/link'
 import NextLink from 'next/link'
 import { FC } from 'react'
-import { NavigationTypes } from '@/features/ui/navigation'
+import { NavigationTypes } from '@/features/navigation'
 
 interface Props {
   propsNavigation: NavigationTypes[]
